@@ -1,1 +1,125 @@
-# HamzaOuadrassi.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hamza | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <nav class="nav">
+      <a class="logo" href="#">Hamza</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <p class="tag">Computer Engineer • Data Science Learner</p>
+      <h1>Hi, I’m <span>Hamza</span> 👋</h1>
+      <p class="subtitle">
+        I build data-driven projects and machine learning models using real-world datasets.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn outline" href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        I’m a computer engineering graduate with a strong interest in data science and machine learning.
+        I completed the IBM Data Science course and I enjoy building predictive models, analyzing datasets,
+        and improving my skills through real projects.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>Python</span>
+        <span>Pandas</span>
+        <span>NumPy</span>
+        <span>Scikit-learn</span>
+        <span>SQL</span>
+        <span>Matplotlib</span>
+        <span>Git/GitHub</span>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>AFCON 2025–2026 Goal Probability Model</h3>
+          <p>
+            Built a model to estimate a player’s probability of scoring based on shots and opportunities.
+            Includes cleaning, feature engineering, training, and evaluation.
+          </p>
+          <div class="card-footer">
+            <span class="pill">Python</span>
+            <span class="pill">ML</span>
+            <a class="link" href="https://github.com/" target="_blank">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Football Player Performance Analysis</h3>
+          <p>
+            Exploratory data analysis on player stats, visualizations, and insights about performance trends.
+          </p>
+          <div class="card-footer">
+            <span class="pill">Pandas</span>
+            <span class="pill">EDA</span>
+            <a class="link" href="https://github.com/" target="_blank">GitHub →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Customer Churn Prediction</h3>
+          <p>
+            Trained a classification model to predict customer churn and explained key features affecting churn.
+          </p>
+          <div class="card-footer">
+            <span class="pill">Scikit-learn</span>
+            <span class="pill">Classification</span>
+            <a class="link" href="https://github.com/" target="_blank">GitHub →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>If you want to collaborate or talk about opportunities, reach out:</p>
+
+      <div class="contact-box">
+        <a class="btn" href="mailto:yourname@email.com">Email Me</a>
+        <a class="btn outline" href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Hamza. Built with HTML & CSS.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
